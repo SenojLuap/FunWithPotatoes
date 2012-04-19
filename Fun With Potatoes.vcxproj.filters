@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\util">
+      <UniqueIdentifier>{56213d9e-5f33-4f92-a6f2-908908b64c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\util\json">
+      <UniqueIdentifier>{e93fa5cd-901c-4d66-905f-4ed7d0a999b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util">
+      <UniqueIdentifier>{a5282b42-26e3-4b2d-bf91-94fec651f1bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\util\json">
+      <UniqueIdentifier>{37f66ca9-81d8-47bd-8751-60b43d97e4f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\model">
+      <UniqueIdentifier>{bcb348d2-da79-4a22-b874-c78d01ca949d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\model\plant">
+      <UniqueIdentifier>{be6ef50a-e7ad-44e6-ace9-7319e57abaf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gfx">
+      <UniqueIdentifier>{db8b3155-eaeb-4d96-a1da-57e18c83ebe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gfx">
+      <UniqueIdentifier>{46d240dc-d0e1-4095-b2c3-ca3e2af6253b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\util\json\json_spirit.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_error_position.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_reader.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_reader_template.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_stream_reader.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_utils.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_value.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_writer.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_writer_options.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\util\json\json_spirit_writer_template.h">
+      <Filter>Header Files\util\json</Filter>
+    </ClInclude>
+    <ClInclude Include="include\model\Trait.h">
+      <Filter>Header Files\model</Filter>
+    </ClInclude>
+    <ClInclude Include="include\model\plant\PlantSpecies.h">
+      <Filter>Header Files\model\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\ImageBuf.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\ImageBufBA.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\ImageBufRGBA.h">
+      <Filter>Header Files\gfx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\util\json\json_spirit_reader.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\json\json_spirit_value.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="src\util\json\json_spirit_writer.cpp">
+      <Filter>Source Files\util\json</Filter>
+    </ClCompile>
+    <ClCompile Include="include\model\plant\Plant.cpp">
+      <Filter>Header Files\model\plant</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\ImageBuf.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\ImageBufBA.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\ImageBufRGBA.cpp">
+      <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
