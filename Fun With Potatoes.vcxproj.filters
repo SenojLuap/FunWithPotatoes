@@ -37,6 +37,12 @@
     <Filter Include="Source Files\gfx">
       <UniqueIdentifier>{46d240dc-d0e1-4095-b2c3-ca3e2af6253b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gfx\fwpg">
+      <UniqueIdentifier>{3624d106-ed29-4211-97fc-9b8d4fbeddc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gfx\fwpg">
+      <UniqueIdentifier>{d19e5df3-91b0-4cab-95ee-f5fc867649f8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\util\json\json_spirit.h">
@@ -84,6 +90,15 @@
     <ClInclude Include="include\gfx\ImageBufRGBA.h">
       <Filter>Header Files\gfx</Filter>
     </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\FWPGComponent.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\Signal.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\SignalListener.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\util\json\json_spirit_reader.cpp">
@@ -106,6 +121,12 @@
     </ClCompile>
     <ClCompile Include="src\gfx\ImageBufRGBA.cpp">
       <Filter>Source Files\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\fwpg\FWPGComponent.cpp">
+      <Filter>Source Files\gfx\fwpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\fwpg\Signal.cpp">
+      <Filter>Source Files\gfx\fwpg</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
