@@ -99,6 +99,18 @@
     <ClInclude Include="include\gfx\fwpg\SignalListener.h">
       <Filter>Header Files\gfx\fwpg</Filter>
     </ClInclude>
+    <ClInclude Include="include\model\plant\Plant.h">
+      <Filter>Header Files\model\plant</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\FWPGContainer.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\FWPGSingleContainer.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\FWPGDoubleContainer.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\util\json\json_spirit_reader.cpp">
@@ -109,9 +121,6 @@
     </ClCompile>
     <ClCompile Include="src\util\json\json_spirit_writer.cpp">
       <Filter>Source Files\util\json</Filter>
-    </ClCompile>
-    <ClCompile Include="include\model\plant\Plant.cpp">
-      <Filter>Header Files\model\plant</Filter>
     </ClCompile>
     <ClCompile Include="src\gfx\ImageBuf.cpp">
       <Filter>Source Files\gfx</Filter>
@@ -126,6 +135,12 @@
       <Filter>Source Files\gfx\fwpg</Filter>
     </ClCompile>
     <ClCompile Include="src\gfx\fwpg\Signal.cpp">
+      <Filter>Source Files\gfx\fwpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\fwpg\FWPGSingleContainer.cpp">
+      <Filter>Source Files\gfx\fwpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\fwpg\FWPGDoubleContainer.cpp">
       <Filter>Source Files\gfx\fwpg</Filter>
     </ClCompile>
   </ItemGroup>

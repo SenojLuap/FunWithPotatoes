@@ -62,12 +62,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="include\gfx\fwpg\FWPGContainer.h" />
+    <ClInclude Include="include\gfx\fwpg\FWPGDoubleContainer.h" />
+    <ClInclude Include="include\gfx\fwpg\FWPGSingleContainer.h" />
     <ClInclude Include="include\gfx\fwpg\Signal.h" />
     <ClInclude Include="include\gfx\fwpg\FWPGComponent.h" />
     <ClInclude Include="include\gfx\fwpg\SignalListener.h" />
     <ClInclude Include="include\gfx\ImageBuf.h" />
     <ClInclude Include="include\gfx\ImageBufBA.h" />
     <ClInclude Include="include\gfx\ImageBufRGBA.h" />
+    <ClInclude Include="include\model\plant\Plant.h" />
     <ClInclude Include="include\model\plant\PlantSpecies.h" />
     <ClInclude Include="include\model\Trait.h" />
     <ClInclude Include="include\util\json\json_spirit.h" />
@@ -82,8 +86,9 @@
     <ClInclude Include="include\util\json\json_spirit_writer_template.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\model\plant\Plant.cpp" />
     <ClCompile Include="src\gfx\fwpg\FWPGComponent.cpp" />
+    <ClCompile Include="src\gfx\fwpg\FWPGDoubleContainer.cpp" />
+    <ClCompile Include="src\gfx\fwpg\FWPGSingleContainer.cpp" />
     <ClCompile Include="src\gfx\fwpg\Signal.cpp" />
     <ClCompile Include="src\gfx\ImageBuf.cpp" />
     <ClCompile Include="src\gfx\ImageBufBA.cpp" />
