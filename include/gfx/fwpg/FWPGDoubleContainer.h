@@ -19,11 +19,14 @@ public:
   void add1(FWPGComponent *com);
   void add2(FWPGComponent *com);
 
-  // The returned values from
   uint16_t getMinWidth();
   uint16_t getMinHeight();
+
   FWPGComponent *get1();
   FWPGComponent *get2();
+
+  void setVisible(bool visible, bool cascade);
+
   FWPGDoubleContainer(bool horizontal = false, uint16_t externalPadding = 0,
       uint16_t individualPadding = 0) : horizontal_(horizontal),
       externalPadding_(externalPadding), individualPadding_(individualPadding),

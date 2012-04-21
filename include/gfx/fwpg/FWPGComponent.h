@@ -12,9 +12,11 @@
 #include "gfx/fwpg/SignalListener.h"
 
 class FWPGComponent {
+protected:
   uint16_t xpos_, ypos_, width_, height_;
   boost::unordered_map<std::string, boost::ptr_vector<SignalListener>>
       listeners_;
+  bool visible_;
 
 public:
   // Retrieves the minimum size (in pixels) required for this component to draw
@@ -31,6 +33,12 @@ public:
   // Note: It is possible to install a listener for a signal that cannot or will
   // not ever be emitted.
   void addSignalListener(SignalListener *el, const std::string signal);
+
+  // Sets the visibility of the component. The cascade argument only applies to
+  // containers. If it is 'true' it will recursively call setVisible() for all
+  // of its children.
+  void setVisible(bool visible, bool cascade);
+  bool isVisible();
 
   FWPGComponent() : xpos_(0), ypos_(0), width_(0), height_(0) {}
 protected:

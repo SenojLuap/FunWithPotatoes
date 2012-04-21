@@ -21,6 +21,10 @@ void FWPGDoubleContainer::add2(FWPGComponent *com) {
 }
 
 uint16_t FWPGDoubleContainer::getMinWidth() {
+  if(!visible_)
+    return 0;
+  if(!(child1_ || child2_))
+    return 0;
   if(horizontal_) {
     if(child1_ && child2_)
       return child1_->getMinWidth() + child2_->getMinWidth() +
@@ -34,6 +38,10 @@ uint16_t FWPGDoubleContainer::getMinWidth() {
 }
 
 uint16_t FWPGDoubleContainer::getMinHeight() {
+  if(!visible_)
+    return 0;
+  if(!(child1_ || child2_))
+    return 0;
   if(!horizontal_) {
     if(child1_ && child2_)
       return child1_->getMinHeight() + child2_->getMinHeight() +
@@ -52,4 +60,12 @@ FWPGComponent *FWPGDoubleContainer::get1() {
 
 FWPGComponent *FWPGDoubleContainer::get2() {
   return child2_;
+}
+
+void FWPGDoubleContainer::setVisible(bool visible, bool cascade) {
+  FWPGComponent::setVisible(visible, cascade);
+  if(cascade) {
+    child1_->setVisible(visible, cascade);
+    child2_->setVisible(visible, cascade);
+  }
 }

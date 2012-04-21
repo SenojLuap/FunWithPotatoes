@@ -22,3 +22,12 @@ void FWPGComponent::fireSignal(const std::string signal) {
       listeners_[signal][i].onSignal(sig);
   }
 }
+
+void FWPGComponent::setVisible(bool visible, bool cascade) {
+  visible_ = visible;
+  fireSignal("visibilityChanged");
+}
+
+bool FWPGComponent::isVisible() {
+  return visible_;
+}

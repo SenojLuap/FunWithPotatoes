@@ -11,9 +11,19 @@ FWPGComponent *FWPGSingleContainer::getContents() {
 }
 
 uint16_t FWPGSingleContainer::getMinWidth() {
-  return child_->getMinWidth() + (padding_ * 2);
+  if(!visible_)
+    return 0;
+  return child_ ? child_->getMinWidth() + (padding_ * 2) : 0;
 }
 
 uint16_t FWPGSingleContainer::getMinHeight() {
-  return child_->getMinHeight() + (padding_ * 2);
+  if(!visible_)
+    return 0;
+  return child_ ? child_->getMinHeight() + (padding_ * 2) : 0;
+}
+
+void FWPGSingleContainer::setVisible(bool visible, bool cascade) {
+  FWPGComponent::setVisible(visible, cascade);
+  if(cascade)
+    child_->setVisible(visible, cascade);
 }

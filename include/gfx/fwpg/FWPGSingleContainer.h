@@ -14,6 +14,7 @@ public:
   FWPGComponent *getContents();
   uint16_t getMinWidth();
   uint16_t getMinHeight();
+  void setVisible(bool visible, bool cascade);
   FWPGSingleContainer() : padding_(0), child_(NULL) {}
   FWPGSingleContainer(uint16_t padding) : padding_(padding), child_(NULL) {}
 };
