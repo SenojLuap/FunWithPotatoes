@@ -111,6 +111,9 @@
     <ClInclude Include="include\gfx\fwpg\FWPGDoubleContainer.h">
       <Filter>Header Files\gfx\fwpg</Filter>
     </ClInclude>
+    <ClInclude Include="include\gfx\fwpg\FWPGVectorContainer.h">
+      <Filter>Header Files\gfx\fwpg</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\util\json\json_spirit_reader.cpp">
@@ -141,6 +144,9 @@
       <Filter>Source Files\gfx\fwpg</Filter>
     </ClCompile>
     <ClCompile Include="src\gfx\fwpg\FWPGDoubleContainer.cpp">
+      <Filter>Source Files\gfx\fwpg</Filter>
+    </ClCompile>
+    <ClCompile Include="src\gfx\fwpg\FWPGVectorContainer.cpp">
       <Filter>Source Files\gfx\fwpg</Filter>
     </ClCompile>
   </ItemGroup>

@@ -65,6 +65,7 @@
     <ClInclude Include="include\gfx\fwpg\FWPGContainer.h" />
     <ClInclude Include="include\gfx\fwpg\FWPGDoubleContainer.h" />
     <ClInclude Include="include\gfx\fwpg\FWPGSingleContainer.h" />
+    <ClInclude Include="include\gfx\fwpg\FWPGVectorContainer.h" />
     <ClInclude Include="include\gfx\fwpg\Signal.h" />
     <ClInclude Include="include\gfx\fwpg\FWPGComponent.h" />
     <ClInclude Include="include\gfx\fwpg\SignalListener.h" />
@@ -89,6 +90,7 @@
     <ClCompile Include="src\gfx\fwpg\FWPGComponent.cpp" />
     <ClCompile Include="src\gfx\fwpg\FWPGDoubleContainer.cpp" />
     <ClCompile Include="src\gfx\fwpg\FWPGSingleContainer.cpp" />
+    <ClCompile Include="src\gfx\fwpg\FWPGVectorContainer.cpp" />
     <ClCompile Include="src\gfx\fwpg\Signal.cpp" />
     <ClCompile Include="src\gfx\ImageBuf.cpp" />
     <ClCompile Include="src\gfx\ImageBufBA.cpp" />
